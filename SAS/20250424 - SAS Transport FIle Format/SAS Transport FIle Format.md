@@ -25,7 +25,11 @@
 
 - `filespec` 可以是带引号的文件路径，或者一个文件引用 _fileref_
 - `format` 指定传输文件的格式，可选 `V5`, `V8`, `AUTO`，当指定 `AUTO` 时，如果数据集不包含超出 `V5` 限制的变量，则导出 `V5` 格式，否则导出 `V8` 或 `V9` 格式。
-  > A V5 transport file is written when you specify AUTO and yourdata set contains no long variable names, long labels, or charactervariables more than 200 bytes. A V8 or V9 transport file is writtenwhen you specify AUTO and your data set contains long variable names,long labels, or character variables more than 200 bytes.
+  > A V5 transport file is written when you specify AUTO and yourdata set contains no long variable names, long labels, or character variables more than 200 bytes. A V8 or V9 transport file is written when you specify AUTO and your data set contains long variable names,long labels, or character variables more than 200 bytes.
+
+> [!NOTE]
+>
+> `V9 transport file` 是什么？我认为应该和 V8 是一样的，只是在 SAS V9 上生成就叫 V9，在 SAS V8 上生成就叫 V8？
 
 # XPT 文件读取为 SAS 数据集
 
